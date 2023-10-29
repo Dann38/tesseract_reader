@@ -1,7 +1,7 @@
 import os
 
-from bbox.bbox import BBox
-from image_reader.image_reader import ImageReader
+from utils.tesseract_reader.bbox.bbox import BBox
+from utils.tesseract_reader.image_reader.image_reader import ImageReader
 from typing import List
 import numpy as np
 from pytesseract import pytesseract
