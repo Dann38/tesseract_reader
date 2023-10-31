@@ -3,6 +3,9 @@ import setuptools
 with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
+with open('requirements.txt', 'r') as file:
+    requirements = file.read().splitlines()
+
 PACKAGE_DIR = {"": "."}
 PACKAGES = setuptools.find_packages()
 setuptools.setup(
@@ -13,6 +16,7 @@ setuptools.setup(
     description="tesseract reader",
     long_description=long_description,
     long_description_content_type="text/markdown",
+    install_requires=requirements,
 
     package_dir=PACKAGE_DIR,
     packages=PACKAGES,
