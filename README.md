@@ -13,3 +13,7 @@ reader = TesseractReader(config)
 bboxes = reader.read(img)
 
 ```
+
+```commandline
+docker run -p 1286:1236 my_image/tesseract
+```
